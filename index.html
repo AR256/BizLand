@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>bootstrap lab</title>
+</head>
+<body>
+  <div class="bg-primary d-flex justify-content-between px-md-5 flex-nowrap flex-sm-5">
+    <div class="d-flex justify-content-between">
+      <div class="px-1 px-md-3 py-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg>
+        <a class="text-white link-underline link-underline-opacity-0" href="/">contact@example.com</a>
+      </div>
+      <div class="px-1 px-md-2 py-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-phone" viewBox="0 0 16 16">
+          <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+          <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+        </svg>
+        <a class="text-white link-underline link-underline-opacity-0" href="/">+1 5589 554488 55</a>
+      </div>
+    </div>
+    <div class="d-sm-flex justify-content-between align-items-center d-none">
+      <a  class="p-2" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ccc" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+        </svg>
+      </a>
+      <a class="p-2 px-3" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ccc" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg>
+      </a>
+      <a class="p-2" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ccc" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg>
+      </a>
+      <a class="p-2 px-3" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ccc" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex fs-1 ms-sm-5" href="#">BizLand <p class="fw-bold text-primary">.</p></a>
+      <button class="navbar-toggler me-sm-5 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item fw-bold">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item dropdown fw-bold">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">Contact</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+  <div style="background-image: url('./resources/imgs/hero-bg.jpg');height: 500px;" class="w-100">
+    <div class="bg-white bg-opacity-50 h-100 w-100 d-flex flex-column justify-content-center">
+      <div class="container">
+        <div class="d-flex">
+          <h1 class="fw-bold">Welcome to</h1>
+          <h1 class="text-primary fw-bold">&nbsp;BizLand</h1>
+        </div>
+        <h5 class="text-dark-emphasis">We are a team of talented designers making websites with Bootstrap</h4>
+        <div class="mt-4 px-4 d-flex align-items-center">
+          <button type="button" class="btn btn-primary me-4 px-4">GET STARTED</button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0275d8" class="bi bi-play-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+          </svg>
+          <h6 class="p-2 m-0">Watch Video</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid d-flex flex-lg-nowrap p-5 row justify-content-center">
+    <div class="card m-2 shadow border-0 col-12 col-md-5 col-lg-3">
+      <div class="card-body">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-backpack m-2" viewBox="0 0 16 16">
+          <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+          <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+        </svg>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card m-2 shadow border-0 col-12 col-md-5 col-lg-3">
+      <div class="card-body">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-file-earmark-text m-2" viewBox="0 0 16 16">
+          <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+          <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+        </svg>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card m-2 shadow border-0 col-12 col-md-5 col-lg-3">
+      <div class="card-body">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-bank m-2" viewBox="0 0 16 16">
+          <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+        </svg>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card m-2 shadow border-0 col-12 col-md-5 col-lg-3">
+      <div class="card-body">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-box-seam m-2" viewBox="0 0 16 16">
+          <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+        </svg>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="containter bg-body-secondary  d-flex flex-column align-items-center p-3">
+    <p class="text-uppercase text-primary fw-bold bg-primary-subtle py-2 px-4 rounded-pill mt-4">About</p>
+    <div class="d-flex flex-wrap">
+      <h2 class="fw-bold text-dark-emphasis text-center">Find Out More <em class="text-primary fw-bold fst-normal">About Us</em></h2>
+    </div>
+    <h5 class="text-dark-emphasis text-center mt-1 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta accusamus provident molestias! Molestiae.</h5>
+    <div class="row d-flex mt-4">
+      <img src="./resources/imgs/about.jpg" alt="about" class="m-1 col-sm-12 col-lg-6">
+      <div class="col-lg-5 mt-5">
+        <h3 class="text-dark-emphasis fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quia laboriosam similique, dolor eveniet.</h3>
+        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus expedita voluptatum ratione quaerat</p>
+        <div class="d-flex mt-4 column-gap-3">
+          <div class="d-flex justify-content-center align-items-center bg-white rounded-circle border-0 shadow" style="width: 36px; height: 36px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0275d8" class="bi bi-shop" viewBox="0 0 16 16">
+            <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+            </svg>
+          </div>
+          <div>
+            <h5 class="text-dark-emphasis">Lorem ipsum dolor sit amet</h5>
+            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="d-flex mt-4 column-gap-3">
+          <div class="d-flex justify-content-center align-items-center bg-white rounded-circle border-0 shadow" style="width: 36px; height: 36px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0275d8" class="bi bi-images" viewBox="0 0 16 16">
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+              <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"/>
+            </svg>
+          </div>
+          <div>
+            <h5 class="text-dark-emphasis">Lorem ipsum dolor sit amet</h5>
+            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <p class="text-dark-emphasis mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id suscipit repellendus harum? Ipsum similique culpa autem libero assumenda distinctio fugit possimus laborum accusantium atque eligendi voluptatem obcaecati, molestias inventore commodi.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-2 d-lg-flex w-100 justify-content-between">
+    <div class="w-100 w-lg-50 container">
+      <div>
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold mt-3 mb-0">HTML</p>
+          <p class="fw-bold mt-3 mb-0">100%</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 100%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold mt-3 mb-0">CSS</p>
+          <p class="fw-bold mt-3 mb-0">90%</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 90%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold mt-3 mb-0">JAVASCRIPT</p>
+          <p class="fw-bold mt-3 mb-0">75%</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="JS" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 75%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 w-lg-50 container">
+      <div>
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold mt-3 mb-0">PHP</p>
+          <p class="fw-bold mt-3 mb-0">80%</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 80%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold mt-3 mb-0">WORDPRESS/CMS</p>
+          <p class="fw-bold mt-3 mb-0">90%</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="CMS" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 90%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="d-flex justify-content-between">
+          <p class="fw-bold mt-3 mb-0">PHOTOSHOP</p>
+          <p class="fw-bold mt-3 mb-0">55%</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="PS" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 55%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5 row mx-auto justify-content-between">
+    <div class="border-end border-start border-5 border-white my-5 col-12 col-md-5 col-lg-3 bg-body-secondary d-flex flex-column justify-content-center align-items-center py-2 position-relative">
+      <div class="bg-primary rounded-circle border border-5 border-white position-absolute top-0 start-50 translate-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" class="bi bi-emoji-smile" viewBox="-4 -4 24 24">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+        </svg>
+      </div>
+      <h3 class="mt-5">232</h3>
+      <p class="text-secondary fw-medium">Happy Clients</p>
+    </div>
+    <div class=" border-end border-start border-5 border-white my-5 col-12 col-md-5 col-lg-3 bg-body-secondary d-flex flex-column justify-content-center align-items-center py-2 position-relative">
+      <div class="bg-primary rounded-circle border border-5 border-white position-absolute top-0 start-50 translate-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" class="bi bi-journal-richtext" viewBox="-4 -4 24 24">
+          <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+          <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+          <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+        </svg>
+      </div>
+      <h3 class="mt-5">521</h3>
+      <p class="text-secondary fw-medium">Projects</p>
+    </div>
+    <div class=" border-end border-start border-5 border-white my-5 col-12 col-md-5 col-lg-3 bg-body-secondary d-flex flex-column justify-content-center align-items-center py-2 position-relative">
+      <div class="bg-primary rounded-circle border border-5 border-white position-absolute top-0 start-50 translate-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" class="bi bi-headset" viewBox="-4 -4 24 24">
+          <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+        </svg>
+      </div>
+      <h3 class="mt-5">1463</h3>
+      <p class="text-secondary fw-medium">Hours Of Support</p>
+    </div>
+    <div class=" border-end border-start border-5 border-white my-5 col-12 col-md-5 col-lg-3 bg-body-secondary d-flex flex-column justify-content-center align-items-center py-2 position-relative">
+      <div class="bg-primary rounded-circle border border-5 border-white position-absolute top-0 start-50 translate-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" class="bi bi-people" viewBox="-4 -4 24 24">
+          <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+        </svg>
+      </div>
+      <h3 class="mt-5">15</h3>
+      <p class="text-secondary fw-medium">Hard Workers</p>
+    </div>
+  </div>
+
+  <div class="bg-body-secondary container m-auto row align-items-center justify-content-around" style="height: fit-content;">
+    <img class="w-auto col-6 col-md-4 col-lg-2 m-3" style="height: 30px;" src="./resources/imgs/clients/client-1.png" alt="sp">
+    <img class="w-auto col-6 col-md-4 col-lg-2 m-3" style="height: 30px;" src="./resources/imgs/clients/client-2.png" alt="sp">
+    <img class="w-auto col-6 col-md-4 col-lg-2 m-3" style="height: 30px;" src="./resources/imgs/clients/client-3.png" alt="sp">
+    <img class="w-auto col-6 col-md-4 col-lg-2 m-3" style="height: 30px;" src="./resources/imgs/clients/client-4.png" alt="sp">
+    <img class="w-auto col-6 col-md-4 col-lg-2 m-3" style="height: 30px;" src="./resources/imgs/clients/client-5.png" alt="sp">
+    <img class="w-auto col-6 col-md-4 col-lg-2 m-3" style="height: 30px;" src="./resources/imgs/clients/client-6.png" alt="sp">
+  </div>
+
+  <div class="containter d-flex flex-column align-items-center p-3 mt-5">
+    <p class="text-uppercase text-primary fw-bold bg-primary-subtle py-2 px-4 rounded-pill mt-4">Services</p>
+    <div class="d-flex flex-wrap">
+      <h2 class="fw-bold text-dark-emphasis text-center">Check Our <em class="text-primary fw-bold fst-normal">Services</em></h2>
+    </div>
+    <h5 class="text-dark-emphasis text-center mt-1 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta accusamus provident molestias! Molestiae.</h5>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="card m-2 col-12 col-md-5 col-lg-3 border-1">
+        <div class="card-body d-flex flex-column align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-backpack m-2 bg-body-secondary border" viewBox="0 0 16 16">
+            <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+            <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+          </svg>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text text-secondary text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card m-2 col-12 col-md-5 col-lg-3 border-1">
+        <div class="card-body d-flex flex-column align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-backpack m-2 bg-body-secondary border" viewBox="0 0 16 16">
+            <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+            <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+          </svg>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text text-secondary text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card m-2 col-12 col-md-5 col-lg-3 border-1">
+        <div class="card-body d-flex flex-column align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-backpack m-2 bg-body-secondary border" viewBox="0 0 16 16">
+            <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+            <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+          </svg>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text text-secondary text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card m-2 col-12 col-md-5 col-lg-3 border-1">
+        <div class="card-body d-flex flex-column align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-backpack m-2 bg-body-secondary border" viewBox="0 0 16 16">
+            <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+            <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+          </svg>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text text-secondary text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card m-2 col-12 col-md-5 col-lg-3 border-1">
+        <div class="card-body d-flex flex-column align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-backpack m-2 bg-body-secondary border" viewBox="0 0 16 16">
+            <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+            <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+          </svg>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text text-secondary text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card m-2 col-12 col-md-5 col-lg-3 border-1">
+        <div class="card-body d-flex flex-column align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0275d8" class="bi bi-backpack m-2 bg-body-secondary border" viewBox="0 0 16 16">
+            <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+            <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+          </svg>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text text-secondary text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner d-flex align-items-center position-relative " style="background-image: url('./resources/imgs/testimonials-bg.jpg'); height: 500px; background-size: cover; background-repeat: no-repeat;">
+      <div class="position-absolute w-100 h-100" style='background-color: rgba(0, 0, 0, 0.5);'></div>
+      <div class="carousel-item active ">
+        <div class="card d-flex justify-content-center flex-column align-items-center text-center border-0 bg-transparent">
+          <img src="./resources/imgs/testimonials/testimonials-1.jpg" class="card-img-top rounded-circle border border-5 border-opacity-25" alt="..." style="width: 128px;">
+          <div class="text-white card-body">
+            <h5 class="card-title ">Name</h5>
+            <div class="d-flex">
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="carousel-item">
+        <div class="card d-flex justify-content-center flex-column align-items-center text-center border-0 bg-transparent">
+          <img src="./resources/imgs/testimonials/testimonials-2.jpg" class="card-img-top rounded-circle border border-5 border-opacity-25" alt="..." style="width: 128px;">
+          <div class="text-white card-body">
+            <h5 class="card-title">Name</h5>
+            <div class="d-flex">
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card d-flex justify-content-center flex-column align-items-center text-center border-0 bg-transparent">
+          <img src="./resources/imgs/testimonials/testimonials-3.jpg" class="card-img-top rounded-circle border border-5 border-opacity-25" alt="..." style="width: 128px;">
+          <div class="text-white card-body">
+            <h5 class="card-title">Name</h5>
+            <div class="d-flex">
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card d-flex justify-content-center flex-column align-items-center text-center border-0 bg-transparent">
+          <img src="./resources/imgs/testimonials/testimonials-4.jpg" class="card-img-top rounded-circle border border-5 border-opacity-25" alt="..." style="width: 128px;">
+          <div class="text-white card-body">
+            <h5 class="card-title">Name</h5>
+            <div class="d-flex">
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card d-flex justify-content-center flex-column align-items-center text-center border-0 bg-transparent">
+          <img src="./resources/imgs/testimonials/testimonials-5.jpg" class="card-img-top rounded-circle border border-5 border-opacity-25" alt="..." style="width: 128px;">
+          <div class="text-white card-body">
+            <h5 class="card-title">Card title</h5>
+
+            <div class="d-flex">
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="./node_modules/bootstrap-icons/icons/quote.svg" alt=".." style="width: 30px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="containter d-flex flex-column align-items-center p-3 mt-5">
+    <p class="text-uppercase text-primary fw-bold bg-primary-subtle py-2 px-4 rounded-pill mt-4">Portfolio</p>
+    <div class="d-flex flex-wrap">
+      <h2 class="fw-bold text-dark-emphasis text-center">Check Our <em class="text-primary fw-bold fst-normal">Portfolio</em></h2>
+    </div>
+    <h5 class="text-dark-emphasis text-center mt-1 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta accusamus provident molestias! Molestiae.</h5>
+    <ul class="nav nav-underline">
+      <li class="nav-item">
+        <a class="nav-link text-primary fw-bold active" aria-current="page" href="#">ALL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-secondary fw-bold" href="#">APP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-secondary fw-bold" href="#">WEB</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-secondary fw-bold" href="#">CARD</a>
+      </li>
+    </ul>
+    <div class="container-fluid m-auto d-flex justify-content-center flex-wrap" >
+      <div class="col-12 col-lg-3 justify-content-center me-4">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-1.jpg" alt="porto">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-6.jpg" alt="porto">
+      </div>
+      <div class="col-12 col-lg-3 justify-content-center me-4">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-2.jpg" alt="porto">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-5.jpg" alt="porto">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-9.jpg" alt="porto">
+      </div>
+      <div class="col-12 d-flex flex-column col-lg-3 me-4">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-3.jpg" alt="porto">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-4.jpg" alt="porto">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-7.jpg" alt="porto">
+        <img class="w-100  mt-4"src="./resources/imgs/portfolio/portfolio-8.jpg" alt="porto">
+      </div>
+      <div class="row justify-content-center mt-4">
+      </div>
+    </div>
+  </div>
+
+  <div class="containter bg-body-secondary  d-flex flex-column align-items-center p-3">
+    <p class="text-uppercase text-primary fw-bold bg-primary-subtle py-2 px-4 rounded-pill mt-4">TEAM</p>
+    <div class="d-flex flex-wrap">
+      <h2 class="fw-bold text-dark-emphasis text-center">Our Hardworking <em class="text-primary fw-bold fst-normal">Team</em></h2>
+    </div>
+    <h5 class="text-dark-emphasis text-center mt-1 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta accusamus provident molestias! Molestiae.</h5>
+    <div class="d-flex flex-wrap gap-4 justify-content-center">  
+      <div class="card border-0 shadow col-md-5 col-lg-2">
+        <img src="./resources/imgs/team/team-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Walter White</h5>
+          <p class="card-text text-secondary">Chief Executive Officer</p>
+        </div>
+      </div>
+      <div class="card border-0 shadow col-md-5 col-lg-2">
+        <img src="./resources/imgs/team/team-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sarah Johnson</h5>
+          <p class="card-text text-secondary">Product Manager</p>
+        </div>
+      </div>
+      <div class="card border-0 shadow col-md-5 col-lg-2">
+        <img src="./resources/imgs/team/team-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">William Anderson</h5>
+          <p class="card-text text-secondary">CTO</p>
+        </div>
+      </div>
+      <div class="card border-0 shadow col-md-5 col-lg-2">
+        <img src="./resources/imgs/team/team-4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Amanda Jepson</h5>
+          <p class="card-text text-secondary">Accountant</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="containter  d-flex flex-column align-items-center p-3">
+    <p class="text-uppercase text-primary fw-bold bg-primary-subtle py-2 px-4 rounded-pill mt-4">PRICING</p>
+    <div class="d-flex flex-wrap">
+      <h2 class="fw-bold text-dark-emphasis text-center">Check Our <em class="text-primary fw-bold fst-normal">Pricing</em></h2>
+    </div>
+    <h5 class="text-dark-emphasis text-center mt-1 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta accusamus provident molestias! Molestiae.</h5>
+    <div class="d-flex flex-wrap justify-content-center flex-lg-nowrap w-75">
+      <div class="m-2 border rounded justify-content-center col-12 col-md-5 col-lg-3">
+        <p class="rounded-top fw-bold bg-body-secondary text-secondary text-center p-3">Free</p>
+        <div class="d-flex justify-content-center mb-3">
+          <em class="fs-6 fst-normal fw-bold text-primary pe-2">$</em>
+          <h2 class="fw-bold text-primary text-center">0<em class="text-secondary fs-6 fst-normal fw-normal">/month</em></h2>
+        </div>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center text-secondary text-decoration-line-through">loerm ipsum</p>
+        <p class="text-center text-secondary text-decoration-line-through">loerm ipsum</p>
+        <div class="rounded-top fw-bold bg-body-secondary text-center p-3">
+          <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+        </div>
+      </div>
+      <div class="m-2 border rounded justify-content-center col-12 col-md-5 col-lg-3">
+        <p class="rounded-top fw-bold bg-primary text-white text-center p-3">Business</p>
+        <div class="d-flex justify-content-center mb-3">
+          <em class="fs-6 fst-normal fw-bold text-primary pe-2">$</em>
+          <h2 class="fw-bold text-primary text-center">19<em class="text-secondary fs-6 fst-normal fw-normal">/month</em></h2>
+        </div>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center text-secondary text-decoration-line-through">loerm ipsum</p>
+        <div class="rounded-top fw-bold bg-body-secondary text-center p-3">
+          <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+        </div>
+      </div>
+      <div class="m-2 border rounded justify-content-center col-12 col-md-5 col-lg-3">
+        <p class="rounded-top fw-bold bg-body-secondary text-secondary text-center p-3">Developer</p>
+        <div class="d-flex justify-content-center mb-3">
+          <em class="fs-6 fst-normal fw-bold text-primary pe-2">$</em>
+          <h2 class="fw-bold text-primary text-center">29<em class="text-secondary fs-6 fst-normal fw-normal">/month</em></h2>
+        </div>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <div class="rounded-top fw-bold bg-body-secondary text-center p-3">
+          <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+        </div>
+      </div>
+      <div class="m-2 border rounded justify-content-center col-12 col-md-5 col-lg-3">
+        <p class="rounded-top fw-bold bg-body-secondary text-secondary text-center p-3">Ultimate <span class="badge text-bg-primary">Advanced</span></p>
+        <div class="d-flex justify-content-center mb-3">
+          <em class="fs-6 fst-normal fw-bold text-primary pe-2">$</em>
+          <h2 class="fw-bold text-primary text-center">49<em class="text-secondary fs-6 fst-normal fw-normal">/month</em></h2>
+        </div>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <p class="text-center">loerm ipsum</p>
+        <div class="rounded-top fw-bold bg-body-secondary text-center p-3">
+          <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-body-secondary pb-5">
+    <div class="containter  d-flex flex-column align-items-center p-3">
+      <p class="text-uppercase text-primary fw-bold bg-primary-subtle py-2 px-4 rounded-pill mt-4">F.A.Q</p>
+      <div class="d-flex flex-wrap">
+        <h2 class="fw-bold text-dark-emphasis text-center">Frequently Asked <em class="text-primary fw-bold fst-normal">Questions</em></h2>
+      </div>
+      <h5 class="text-dark-emphasis text-center mt-1 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta accusamus provident molestias! Molestiae.</h5>
+    </div>
+    <div class="accordion accordion-flush container" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-body-secondary border-bottom border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Question Number #1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body bg-body-secondary">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-body-secondary border-bottom border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Question Number #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body bg-body-secondary">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-body-secondary border-bottom border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Question Number #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body bg-body-secondary">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-body-secondary border-bottom border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Question Number #4
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body bg-body-secondary">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the forth item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-body-secondary border-bottom border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            Question Number #5
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body bg-body-secondary">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the fifth item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" style="padding: 60px 0;">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center text-center mb-4">
+            <h2 class="h2 text-primary fs-6 fw-bold d-inline px-3 py-2 rounded-4 text-uppercase" style="background-color: #e7f1fd !important; letter-spacing: 1px;">
+                Contact
+            </h2>
+            <h3 class="h3 fs-2 fw-bold lh-sm text-dark-emphasis">
+                <span class="text-primary">
+                    Contact Us
+                </span>
+            </h3>
+            <p class="text-secondary-emphasis fw-semibold w-100" style="max-width: 768px;">
+                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="d-flex flex-column align-items-center text-center shadow-sm mb-4">
+                    <div class="p-2 rounded-circle border-primary mb-2" style="border: dotted;">
+                        <img src="./node_modules/bootstrap-icons/icons/geo-alt.svg" width="24px" alt="Map">
+                    </div>
+                    <h3 class="h3 fs-5 fw-bold text-secondary">
+                        Our Address
+                    </h3>
+                    <p class="text-body-secondary">
+                        A108 Adam Street, New York, NY 535022
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column align-items-center text-center shadow-sm mb-4">
+                    <div class="p-2 rounded-circle border-primary mb-2" style="border: dotted;">
+                        <img src="./node_modules/bootstrap-icons/icons/envelope-at.svg" width="24px" alt="Envelope">
+                    </div>
+                    <h3 class="h3 fs-5 fw-bold text-secondary">
+                        Email Us
+                    </h3>
+                    <p class="text-body-secondary">
+                        contact@example.com
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column align-items-center text-center shadow-sm mb-4">
+                    <div class="p-2 rounded-circle border-primary mb-2" style="border: dotted;">
+                        <img src="./node_modules/bootstrap-icons/icons/telephone.svg" width="24px" alt="Phone">
+                    </div>
+                    <h3 class="h3 fs-5 fw-bold text-secondary">
+                        Call Us
+                    </h3>
+                    <p class="text-body-secondary">
+                        +1 5589 55488 55
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-gap-4">
+            <div class="col-lg-6">
+                <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-lg-6">
+                <form class="shadow-sm p-4 d-flex flex-column gap-4">
+                    <div class="row column-gap-2 row-gap-4">
+                        <div class="col form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                        </div>
+                        <div class="col form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" style="resize: none;"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary py-2 px-4">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+  <div style="background-color: #f6f9fe; padding: 60px 0;">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                  <h4 class="h4 fw-bold fs-3 text-secondary-emphasis">
+                      Join Our Newsletter
+                  </h4>
+                  <p class="text-secondary-emphasis my-4">
+                      Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+                  </p>
+                  <form class="input-group mb-3">
+                      <input type="text" class="form-control">
+                      <button class="btn btn-primary" type="button" id="button-addon2">
+                          Subscribe
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div style="padding: 60px 0;">
+      <div class="container">
+          <div class="row row-gap-4">
+              <div class="col-lg-3 col-md-6">
+                  <h3 class="h3 fs-4 text-secondary-emphasis fw-bold">
+                      BizLand<span class="text-primary">.</span>
+                  </h3>
+                  <p class="text-secondary">
+                      A108 Adam Street 
+                      <br>
+                      New York, NY 535022
+                      <br>
+                      United States 
+                      <br>
+                      <br>
+                      <strong>
+                          Phone:
+                      </strong> 
+                      +1 5589 55488 55
+                      <br>
+                      <strong>
+                          Email:
+                      </strong>
+                      info@example.com
+                      <br>
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="h4 fw-bold fs-6 text-secondary-emphasis">
+                      Useful Links
+                  </h4>
+                  <ul class="list-unstyled d-flex flex-column gap-2">
+                      <li class="mt-2">
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right"> 
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Home
+                          </a>
+                      </li>
+                      <li>
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right"> 
+                          <a href="#" class="text-decoration-none text-secondary">
+                              About us
+                          </a>
+                      </li>
+                      <li>
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right"> 
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Services
+                          </a>
+                      </li>
+                      <li>
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right"> 
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Terms of service
+                          </a>
+                      </li>
+                      <li>
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right"> 
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Privacy policy
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="h4 fw-bold fs-6 text-secondary-emphasis">
+                      Our Services
+                  </h4>
+                  <ul class="list-unstyled d-flex flex-column gap-2">
+                      <li class="mt-2">
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right">
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Web Design
+                          </a>
+                      </li>
+                      <li>
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right">
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Web Development
+                          </a>
+                      </li>
+                      <li>
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right">
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Product Management
+                          </a>
+                      </li>
+                      <li>
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right">
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Marketing
+                          </a>
+                      </li>
+                      <li>
+                          <img src="./node_modules/bootstrap-icons/icons/chevron-right.svg" width="12px" alt="Right">
+                          <a href="#" class="text-decoration-none text-secondary">
+                              Graphic Design
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="h4 fw-bold fs-6 text-secondary-emphasis">
+                      Our Social Networks
+                  </h4>
+                  <p class="text-secondary-emphasis my-2">
+                      Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies
+                  </p>
+                  <div class="mt-3 d-flex gap-2">
+                      <a href="#" class="btn btn-primary d-grid p-2">
+                          <img src="./node_modules/bootstrap-icons/icons/twitter.svg" alt="Twitter">
+                      </a>
+                      <a href="#" class="btn btn-primary d-grid p-2">
+                          <img src="./node_modules/bootstrap-icons/icons/facebook.svg" alt="Facebook">
+                      </a>
+                      <a href="#" class="btn btn-primary d-grid p-2">
+                          <img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="Instagram">
+                      </a>
+                      <a href="#" class="btn btn-primary d-grid p-2">
+                          <img src="./node_modules/bootstrap-icons/icons/google.svg" alt="Google">
+                      </a>
+                      <a href="#" class="btn btn-primary d-grid p-2">
+                          <img src="./node_modules/bootstrap-icons/icons/linkedin.svg" alt="Linkedin">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div style="background-color: #f6f9fe; padding: 20px 0;">
+      <div class="container d-flex align-items-center justify-content-between">
+              <div>
+                  © Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
+              </div>
+              <div>
+                  Designed by 
+                  <a href="#" class="text-decoration-none">
+                      BootstrapMade
+                  </a>
+              </div>
+      </div>
+  </div>
+</footer>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
